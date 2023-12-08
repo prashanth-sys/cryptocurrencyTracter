@@ -1,4 +1,10 @@
 /* Write your CSS code here */
-.heading {
+.list-container {
   color: #00e7ff;
+  font-family: 'Roboto';
+  display: flex;
+  flex-direction: column;
+}
+.list-items {
+  display: flex;
 }

@@ -13,10 +13,6 @@ import './index.css'
 class CryptocurrencyTracker extends Component {
   state = {isLoading: true}
 
-  cryptocurrenciesList = () => {
-    this.setState({isLoading: false})
-  }
-
   render() {
     const {isLoading} = this.state
 
@@ -25,7 +21,7 @@ class CryptocurrencyTracker extends Component {
         {!isLoading ? (
           <Loader type="Rings" color="#ffffff" height={80} width={80} />
         ) : (
-          <CryptocurrenciesList cryptocurrenciesList={CryptocurrenciesList} />
+          <CryptocurrenciesList />
         )}
       </div>
     )

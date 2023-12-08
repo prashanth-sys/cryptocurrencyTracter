@@ -21,7 +21,7 @@ class CryptocurrenciesList extends Component {
       id: eachItem.id,
       usdValue: eachItem.usd_value,
       euroValue: eachItem.euro_value,
-      currencyName: eachItem.currencyName,
+      currencyName: eachItem.currency_name,
       currencyLogo: eachItem.currency_logo,
     }))
     this.setState({blogsData: formatedData})
@@ -31,7 +31,7 @@ class CryptocurrenciesList extends Component {
     const {blogsData} = this.state
     return (
       <div className="bg-container">
-        <h1 className="main-heading">Cryptocurrencies Tracker</h1>
+        <h1 className="main-heading">Cryptocurrency Tracker</h1>
         <img
           src="https://assets.ccbp.in/frontend/react-js/cryptocurrency-bg.png"
           alt="cryptocurrency"
